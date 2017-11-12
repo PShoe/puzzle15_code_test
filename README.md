@@ -1,6 +1,6 @@
 # Objective
 
-![Link to puzzle15](https://pshoe.github.io/puzzle15_code_test/)
+[Link to puzzle15](https://pshoe.github.io/puzzle15_code_test/)
 
 Create a tile puzzle interface that consists of a frame divided into even tiles with one tile missing. These tiles should then be randomised so that user interaction is required to resolve the original frame. Tiles may only be moved into the empty position
 
