@@ -4,7 +4,7 @@
 
 Create a tile puzzle interface that consists of a frame divided into even tiles with one tile missing. These tiles should then be randomised so that user interaction is required to resolve the original frame. Tiles may only be moved into the empty position
 
-![](https://github.com/PShoe/puzzle15_react/blob/master/reactpuzzle.png)
+![](https://github.com/PShoe/puzzle15_code_test/blob/master/reactpuzzle.png)
 
 ## Summary
 
