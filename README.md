@@ -6,13 +6,6 @@ Create a tile puzzle interface that consists of a frame divided into even tiles 
 
 ![](https://github.com/PShoe/puzzle15_react/blob/master/reactpuzzle.png)
 
-## Instructions
-
-* download/clone this git repo
-* run npm install
-* run npm start
-* http://localhost:4000/
-
 ## Summary
 
 This basic game is meant to resemble the logic of the classic  !['puzzle 15'](https://en.wikipedia.org/wiki/15_puzzle) challenge. Once the page is loaded (or refreshed) a set of tiles in random order will appear. The game is won when the user puts each tile in the correct numerical order.
