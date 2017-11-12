@@ -1,45 +1,35 @@
-# webpack2 react starter
+# Objective
 
-All you need, none you don't. 
+![Link to puzzle15](https://pshoe.github.io/puzzle15_code_test/)
 
-Sensible starter to try react with webpack 3 that deploys straight to github pages.
+Create a tile puzzle interface that consists of a frame divided into even tiles with one tile missing. These tiles should then be randomised so that user interaction is required to resolve the original frame. Tiles may only be moved into the empty position
 
-## Based on
+![](https://github.com/PShoe/puzzle15_react/blob/master/reactpuzzle.png)
 
-1. Bundler: [Webpack](http://webpack.github.io/docs/), [Babel](https://babeljs.io)
-2. Language: [ES2015](https://babeljs.io/docs/learn-es2015/)
-3. Library: [React](https://reactjs.org/), [Sass](http://sass-lang.com/)
+## Instructions
 
-## Usage
+* download/clone this git repo
+* run npm install
+* run npm start
+* http://localhost:4000/
 
-1. clone this repo
-```
-git clone THIS_GIT_REPO_URL
-```
+## Summary
 
-2. install dependencies using npm or yarn
-```
-npm install
-```
-or
-```
-yarn install
-```
+This basic game is meant to resemble the logic of the classic  !['puzzle 15'](https://en.wikipedia.org/wiki/15_puzzle) challenge. Once the page is loaded (or refreshed) a set of tiles in random order will appear. The game is won when the user puts each tile in the correct numerical order.
 
-3. start development server and code
-```
-npm start
-```
+## Technology Used
 
-## build and deploy with github pages
+* ES6, React & CSS
+* underscore library
 
-Github pages support hosting your site in a docs directory within your repo. Simply run the following command to build your site into docs directory and update the source setting on github. 
+## Design/Approach
 
-```
-npm run build
-```
+I put the state on the board itself, rather than the individual squares. I also used objects as my dta type to signify each square space, it's ability to move, and it's coordinates on a 2-D grid.
 
-## tests
-```
-npm test
-``` 
+To find if a space on the board is open for a tile to move into, I used the findSquaresCanMoveTo logic inside the lib folder. This calculates if there is a square to the left, right, above or below, then retrieves that square and sets it's "can move into" state to true.
+
+Finally, checkWin that occurs each time a move is made, and will check your current state array of numbers to the correct numerical order, which is a const.
+
+## Challenges/Improvements
+
+The findSquaresCanMoveTo functionality is still quite bulky. I had trouble comparing arrays, and added a few toStrings() to be certain I knew the if expressions were correct. There is likely a more elegant way of comparing the coordinate arrays. There is also a fair amount of repetition on findSquaresCanMoveTo and when the squares are rendered to the page. If a dev would like to scale this up at a later date, it would be useful to convert some of these into for loops or functions with size parameters.
