@@ -21,7 +21,7 @@ I put the state on the board itself, rather than the individual squares. I also 
 
 To find if a space on the board is open for a tile to move into, I used the findSquaresCanMoveTo logic inside the lib folder. This calculates if there is a square to the left, right, above or below, then retrieves that square and sets it's "can move into" state to true.
 
-Finally, checkWin that occurs each time a move is made, and will check your current state array of numbers to the correct numerical order, which is a const.
+Finally, checkWin logic occurs each time a move is made, and will check a user's current state array of numbers to the correct numerical order, which is a const.
 
 ## Challenges/Improvements
 
